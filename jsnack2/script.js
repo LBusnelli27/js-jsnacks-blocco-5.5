@@ -7,4 +7,10 @@ function reverseString(str) {
   return newString;
 }
 
+
+function negativeInt(num) {
+  return num = num - (num * 2);
+}
+
 console.log(reverseString(prompt("Scirvi la stringa da girare")));
+console.log(negativeInt(parseInt(prompt("Scirvi un numero"))));

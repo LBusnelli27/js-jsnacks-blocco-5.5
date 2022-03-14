@@ -62,19 +62,12 @@ arrayZucchine.forEach(element => {
 
   if(element.lunghezza > 15) {
     zucchineLunghe.push(element);
+    pesoTotLunghe += element.peso;
   } else {
     zucchineCorte.push(element)
+    pesoTotCorte += element.peso;
   }
 });
-
-zucchineLunghe.forEach(element => {
-  pesoTotLunghe += element.peso;
-});
-
-zucchineCorte.forEach(element => {
-  pesoTotCorte += element.peso;
-});
-
 
 
 console.log(`Peso tot: ${pesoTot}`);
